@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
+
+*{
+    text-decoration: none;  
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color:  #302E2E;
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 2.5rem;
+    padding: 0.5% 10% 0% 12%;
+    background: black;
+}
+
+.cabecalho-menu-logo{
+    width: 5rem;
+    
+}
+
+.cabecalho-menu-link{
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
+}
+
+.cabecalho-menu-link:hover{
+    color: #E71818;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0% 39% 0% 30%;
+    margin-top: 40%;
+    background-color: black;
+
+
+}
+.footer-logo{
+    width: 17%;
+}
+
+.footer-copy{
+    padding-top: 7%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+    width: 846px;
+    height: 46px;
+
+}
+
+.mapa{
+    text-align: center;
+}
+
+iframe{
+    padding: 0px;
+    margin-right: 900px;
+    margin-top: 50px;
+    align-items: center;
+}
+
