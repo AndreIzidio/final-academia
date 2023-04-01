@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
+
+
+*{
+    text-decoration: none;  
+    box-sizing: border-box;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 2.5rem;
+    padding: 0.5% 10% 0% 12%;
+    background: black;
+}
+
+.cabecalho-menu-logo{
+    width: 5rem;
+    
+}
+
+.cabecalho-menu-link{
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
+}
+
+.cabecalho-menu-link:hover{
+    color: #E71818;
+}
+
+main {
+text-align: center;
+font-family: Bebas Neue;
+color: white;
+font-size: 30px;
+line-height: 50px;
+margin: 100px;
+margin-left: 550px;
+border-radius: 5px;
+box-sizing: border-box;
+width: 700px;
+height: 550px;
+border: 3px solid #642020;
+}
+
+
+body{
+width: 1850px;
+height: 1025px;
+background: #302E2E;
+}
+
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0% 39% 0% 30%;
+    margin-top: 10%;
+    background-color: black;
+
+
+}
+.footer-logo{
+    width: 17%;
+}
+
+.footer-copy{
+    padding-top: 7%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+    width: 846px;
+    height: 46px;
+
+}
+ 
+button {
+height: 79px;
+width: 346px;
+margin: 230px;
+margin-left: 30%;
+border-radius: 30px;
+margin-top: 20px;
+background: #D81A1A;
+font-size: 80% ;
+color: white;
+font-family: 'Roboto';
+}
+
+input{
+font-size: 80%;
+height: 82px;
+width: 480px;
+left: 500px;
+top: 332px;
+border-radius: 20px;
+}
+
+
+
+
+
