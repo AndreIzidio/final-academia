@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 120px;
+    background: #11141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    width: 5rem;
+}
+
+.cabecalho-links{
+    color: white;
+    font-size: 20px;
+    margin-left: 35px;
+    transition: .2s;
+}
+
+.cabecalho-links:hover{
+    color: #E71818;
+}
+
+section h1{
+    font-family: 'Bebas Neue' , sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #E71818;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;  
+    flex-wrap: wrap;  
+    gap: 40px;
+    margin: 1% 10% 1% 10%;
+    margin-bottom: 7rem;
+
+ }
+ .imagem{
+    width: 30%;
+    border-radius: 20px;
+ }
+ 
+
+ footer {
+    background: #11141a;
+    text-align: center;
+}
+
+
+.copyright {
+    padding: 2rem 1rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.copyright span {
+    color: #E71818;
+}
