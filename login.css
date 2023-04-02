@@ -8,7 +8,9 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
-
+body{
+    background-color:#302E2E;
+}
 header{
     position: fixed;
     top: 0;
