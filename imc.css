@@ -1,31 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 *{
-    text-decoration: none;  
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
-.cabecalho-menu{
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 120px;
+    background: #11141a;
     display: flex;
-    gap: 2.5rem;
-    padding: 0.5% 10% 0% 12%;
-    background: black;
-}
-
-.cabecalho-menu-logo{
-    width: 5rem;
-    
-}
-
-.cabecalho-menu-link{
+    justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #f2f2f2;
+    z-index: 100;
 }
 
-.cabecalho-menu-link:hover{
+.logo{
+    width: 5rem;
+}
+
+.cabecalho-links{
+    color: white;
+    font-size: 20px;
+    margin-left: 35px;
+    transition: .2s;
+}
+
+.cabecalho-links:hover{
     color: #E71818;
 }
 
