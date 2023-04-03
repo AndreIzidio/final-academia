@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
+
+
+
+
 *{
     text-decoration: none;
     padding: 0;
@@ -9,7 +13,7 @@
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background-color:#302E2E;
+    background-color:#ECECEC;
 }
 header{
     position: fixed;
@@ -28,27 +32,37 @@ header{
     width: 5rem;
 }
 
-.cabecalho-links{
-    color: white;
+
+.cabecalho-links {
     font-size: 20px;
     margin-left: 35px;
     transition: .2s;
+    color: rgb(211, 210, 210);
 }
 
-.cabecalho-links:hover{
+.cabecalho-links a:hover {
     color: #E71818;
+}
+
+#menu-hamburguer {
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: .3rem;
+    padding: .5rem 3rem;
+    display: none;
 }
 
 
 
 
 .login{
-    background-color: #222121;
-    margin: 10% 35% 17% 35%;
+    background-color: #FBFBFB;
+    margin: 10% 35% 10% 35%;
     padding-top: 3rem;
     padding-bottom: 5rem;
-    color: #f2f2f2;
-   text-align: center;
+    color: #0f0f0f;
+    text-align: center;
     border: 1px solid #E71818;
 }
 .titulo{
@@ -59,7 +73,7 @@ header{
 }
 
 .login-dados-nome{
-    font-family: 'bebas Naue', sans-serif;
+    font-family: 'bebas Neue', sans-serif;
     font-size: 23px;
     margin-top: 1.5rem;
     text-align: auto;
@@ -68,6 +82,8 @@ header{
     margin-top: .1rem;
     border-radius: 1.5rem;
     padding: 0.5rem 5rem;
+    border: 2px solid #E71818;
+    
 }
 
 .login-botoes{
@@ -104,6 +120,7 @@ header{
     font-size: 1rem;
     padding: 0.6rem 3.4rem 0.6rem 3.4rem;
     border-radius: 0.5rem;
+    border: 1px solid #000;
 }
 .login-botoes-cadastrar:hover{
     background-color: #afaeae;
@@ -134,14 +151,46 @@ footer {
     .login{
         margin: 10% 28% 17% 28%;
     }
+    .cabecalho-links{
+        font-size: 90%;
+    }
+    
     
 }
 
 @media (max-width: 1000px){
+    
+
+    #menu-hamburguer {
+        display: initial;
+    }
+
+    .cabecalho {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #000000;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .cabecalho.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+   .cabecalho a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid #E71818;
+        background: #1d1d1d;
+    }
+
     .login{
         margin: 10% 23% 17% 23%;
     }
-    
 }
 
 @media (max-width: 800px){
