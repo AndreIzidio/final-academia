@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC</title>
+    <title>IMC - SIGMA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="imc.css">
 </head>
 <body>
-    <header class="header">
+  <header class="header">
         <img class="logo" src="./images/logoAcademia.png">
         <div id="menu-hamburguer" class="fas fa-bars"></div>
         <nav class="cabecalho">
@@ -21,35 +21,34 @@
             <a class="cabecalho-links" href="login.html">Espaço Cliente</a>
         </nav>
     </header>
+
     <main>
-       
         <section class="imc">
+            <h1 class="titulo">Calcule seu IMC</h1>
             <div class="imc-container">
-
-                    <p class="titulo">Calcule seu IMC</p>
-
-                <div class="conta-imc">   
-                    <p class="txt-peso">Informe seu peso</p>
-                    <input type="number" placeholder="Exemplo: 1.75" id="peso">
-                    <p class="txt-altura">Informe sua altura</p>
-                    <input type="number" placeholder="Exemplo: 1.75" id="altura" >
+                <div class="divAltura">
+                    <label class="nome-campo" for="altura">Altura (M)</label><br>
+                    <input class="campo" type="number" id="altura">
                 </div>
+                <div class="divPeso">
+                    <label class="nome-campo" for="peso">Peso (KG)</label><br>
+                    <input class="campo" type="number" id="peso">
+                </div>
+                <div class="divCalc">
+                    <button class="calcular" onclick="calcIMC()"><p class="desc-botao">Calcular</p></button>
+                </div>
+                
             </div>
-            <div class="botao">
-                <button onclick="calcularIMC()">Calcular</button>              
-            </div>
-                <h1></h1>
-
+            <p class="nome-resultado">Resultado</p>
+            <span id="resultado"></span>
         </section>
-
     </main>
-    
 
     
-   <!--<footer>
+   <footer>
         <h1 class="copyright"> @Copyright 2023 -<span> SIGMA </span> | Todos os direitos reservados. </h1>
     </footer>
-    --> 
+   
 
     <script src="script.js"></script>
 </body>
