@@ -28,16 +28,26 @@ header{
     width: 5rem;
 }
 
-.cabecalho-links{
-    color: white;
+.cabecalho-links {
     font-size: 20px;
     margin-left: 35px;
     transition: .2s;
+    color: rgb(211, 210, 210);
 }
 
-.cabecalho-links:hover{
+.cabecalho-links a:hover {
     color: #E71818;
 }
+
+#menu-hamburguer {
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: .3rem;
+    padding: .5rem 3rem;
+    display: none;
+}
+
 
 section h1{
     margin-top: 6rem;
@@ -63,6 +73,7 @@ section h1{
     border-radius: 20px;
  }
  
+ 
 
  footer {
     background: #11141a;
@@ -79,4 +90,37 @@ section h1{
 
 .copyright span {
     color: #E71818;
+}
+
+
+@media (max-width: 1015px){
+    
+
+    #menu-hamburguer {
+        display: initial;
+    }
+
+    .cabecalho {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #000000;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .cabecalho.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+   .cabecalho a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid #E71818;
+        background: #1d1d1d;
+    }
+
 }

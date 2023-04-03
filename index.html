@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <header>
+    <header class="header">
         <img class="logo" src="./images/logoAcademia.png">
+        <div id="menu-hamburguer" class="fas fa-bars"></div>
         <nav class="cabecalho">
             <a class="cabecalho-links" href="index.html" >Inicio</a>
             <a class="cabecalho-links" href="planos.html">Planos</a>
@@ -37,7 +39,7 @@
                     <div class="container-box">
                         <p class="texto-historia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam corporis dolorum blanditiis eligendi totam soluta sapiente facilis necessitatibus vitae odit accusantium iure vel nisi perferendis porro, ipsa placeat magnam.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam corporis dolorum blanditiis eligendi totam soluta sapiente facilis necessitatibus vitae odit accusantium iure vel nisi perferendis porro, ipsa placeat magnam.</p>                      
-                        <a class="botao-historia">Descubra Mais!</a>
+                        <a href="sobre.html" class="botao-historia">Descubra Mais!</a>
                     </div>
             </div>           
         </section>
@@ -57,7 +59,7 @@
                 <img class="imagem-modalidades"   src="./images/muaythai.jpg" alt="jiu-jitsu">
                 <img class="imagem-modalidades"   src="./images/yoga.jpg" alt="jiu-jitsu">
             </div>
-            <a class="botao-modalidades">Veja Mais!</a>
+            <a href="modalidades.html" class="botao-modalidades">Veja Mais!</a>
         </section>
 
         <section class="treinadores">   
@@ -88,7 +90,7 @@
                     </div>      
                 </div>
             </div>   
-            <a class="botao-treinadores">Veja Mais!</a>
+            <a href="planos.html" class="botao-treinadores">Veja Mais!</a>
         </section>
         
        
@@ -104,7 +106,7 @@
                     <p class="desc-planos">Sem restrição de horários</p>
                 </div>
                
-                <a class="botao-matricula" href="#">Matricule-se</a>
+                <a class="botao-matricula" href="planos.html">Matricule-se</a>
             </div>
             <div class="planos-informacoes">
                 <div class="plano-1">
@@ -115,7 +117,7 @@
                     <p class="desc-planos">Sem restrição de horários</p>
                 </div>
                 
-                <a class="botao-matricula" href="#">Matricule-se</a>
+                <a class="botao-matricula" href="planos.html">Matricule-se</a>
             </div>
             <div class="planos-informacoes">
                 <div class="plano-1">
@@ -126,7 +128,7 @@
                     <p class="desc-planos">Sem restrição de horários</p>
                 </div>
 
-                <a class="botao-matricula" href="#">Matricule-se</a>
+                <a class="botao-matricula" href="planos.html">Matricule-se</a>
             </div>
         </section>
 
@@ -148,7 +150,7 @@
                     <img class="imagem-local" src="./images/image-5.jpeg">
                     <img class="imagem-local" src="./images/image-6.jpg">
             </div>
-            <a class="botao-local">Localização</a>
+            <a class="botao-local" href="sobre.html">Localização</a>
         </section>
 
     </main>
@@ -158,5 +160,6 @@
         <h1 class="copyright"> @Copyright 2023 -<span> SIGMA </span> | Todos os direitos reservados. </h1>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

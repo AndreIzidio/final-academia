@@ -1,29 +1,28 @@
-const resultado = document.querySelector('#resultado')
-const altura = document.querySelector('#altura')
-const peso = document.querySelector('#peso')
+let menu = document.querySelector('#menu-hamburguer');
+let navbar = document.querySelector('.cabecalho');
 
-const calcIMC = () => {
+menu.onclick = () => {
 
-  if (altura.value !== '' && peso.value !== '') {
-    const imc = (peso.value / (altura.value * altura.value)).toFixed(2)
-    let classification = ''
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
 
-    if (imc < 18.5) {
-      classification = 'Abaixo do peso'
-    } else if (imc < 25) {
-      classification = 'Peso normal'
-    } else if (imc < 30) {
-      classification = 'Acima do peso'
-    } else if (imc < 35) {
-      classification = 'Obesidade Grau I'
-    } else if (imc < 41) {
-      classification = 'Obesidade Grau II'
-    } else {
-      classification = 'Obesidade Grau III'
-    }
-    
-    resultado.innerHTML = `IMC: ${imc} (${classification})`
-  } else {
-    resultado.innerHTML = 'Preencha os campos'
-  }
+}
+
+window.onscroll = () => {
+
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+
+
+
+
+function calcularIMC(){
+  const peso = parseFloat(document.getElementById("peso").value);
+  const altura = parseFloat(document.getElementById("altura").value);
+
+  const imc = (peso / (altura*altura)).toFixed(1);
+
+  document.querySelector("h1").innerHTML = imc;
+
 }
