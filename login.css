@@ -44,35 +44,34 @@ header{
 
 .login{
     background-color: #222121;
-    margin: 8% 35% 17% 35%;
+    margin: 10% 35% 17% 35%;
     padding-top: 3rem;
     padding-bottom: 5rem;
     color: #f2f2f2;
-    border-radius: 10px;
    text-align: center;
     border: 1px solid #E71818;
 }
-.login-titulo{
+.titulo{
     font-size: 3rem;
     padding-bottom: 1rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
+    font-family: 'bebas Neue', sans-serif;
+    
 }
 
 .login-dados-nome{
-    font-family: 'bebas naue', sans-serif;
-    font-size: 19px;
+    font-family: 'bebas Naue', sans-serif;
+    font-size: 23px;
     margin-top: 1.5rem;
     text-align: auto;
 }
 .login-dados-campos{
     margin-top: .1rem;
     border-radius: 1.5rem;
-    padding: 0.3rem 1.9rem;
+    padding: 0.5rem 5rem;
 }
 
 .login-botoes{
-    margin-top: .5rem;
+    margin-top: 7%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -88,9 +87,9 @@ header{
     justify-content: center;
     color: white;
     background-color: #E71818;
-    font-size: .9rem;
+    font-size: 1rem;
     gap: 1rem;    
-    padding: 0.4rem 3.4rem 0.4rem 3.4rem;
+    padding: 0.6rem 4.9rem 0.6rem 4.9rem;
     border-radius: 0.5rem;
 }
 .login-botoes-entrar:hover{
@@ -102,34 +101,63 @@ header{
     justify-content: center;
     color: rgb(207, 19, 19);
     background-color: #ffffff;
-    font-size: .9rem;
-    padding: 0.4rem 2.1rem 0.4rem 2.1rem;
+    font-size: 1rem;
+    padding: 0.6rem 3.4rem 0.6rem 3.4rem;
     border-radius: 0.5rem;
 }
 .login-botoes-cadastrar:hover{
     background-color: #afaeae;
 }
 
-.rodape{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 0% 35% 0% 30%;
-    background-color: black;
-
-}
-.footer-logo{
-    width: 17%;
-}
-
-.footer-copy{
-    padding-top: 7%;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+footer {
+    margin-top: 7%;
+    background: #11141a;
     text-align: center;
+}
 
-    width: 846px;
-    height: 46px;
 
+.copyright {
+    padding: 2rem 1rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.copyright span {
+    color: #E71818;
+}
+
+
+
+
+@media (max-width: 1300px){
+    .login{
+        margin: 10% 28% 17% 28%;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .login{
+        margin: 10% 23% 17% 23%;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .login{
+        margin: 10% 15% 17% 15%;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .login{
+        margin: 10% 6% 17% 6%;
+    }
+    .login-dados-campos{
+        margin-top: .1rem;
+        border-radius: 1.5rem;
+        padding: 0.5rem 3rem;
+    }
 }
