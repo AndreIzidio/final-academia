@@ -1,3 +1,14 @@
+//modo dark
+const header = document.querySelector('body');
+const icon = document.querySelector('.icon')
+
+icon.addEventListener('click' , () => {
+  header.classList.toggle('dark')
+})
+
+
+//menu hamburguer
+
 let menu = document.querySelector('#menu-hamburguer');
 let navbar = document.querySelector('.cabecalho');
 
@@ -16,7 +27,7 @@ window.onscroll = () => {
 
 
 
-
+//IMC
 function calcularIMC(){
   const peso = parseFloat(document.getElementById("peso").value);
   const altura = parseFloat(document.getElementById("altura").value);
