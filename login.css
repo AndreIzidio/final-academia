@@ -2,7 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 
-
+:root{
+    --cor-header:#11141a;
+    --cor-background: #ECECEC;
+    --cor-background-login: #FBFBFB;
+    --cor-hover-branco:#afaeae;
+    --cor-destaque: #E71818;
+    --cor-hover-verm: #cc1414;
+    --cor-texto:#0f0f0f;
+    --cor-branca:#ffffff;
+    --cor-background-dark: #302E2E;
+    --cor-background-login-dark: #222121;
+    --cor-texto-dark:#F4ECEC;
+    --cor-preta:#000000;
+}
 
 
 *{
@@ -12,17 +25,25 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+.escuro body{
+    background-color: var(--cor-background-dark);
+}
+.escuro .login{
+    background-color: var(--cor-background-login-dark);
 
+}
+.escuro .titulo{
+    color: var(--cor-texto-dark);
+}
+.escuro .login-dados-nome{
+    color: var(--cor-texto-dark);
+}
 
 body{
-
-    background-color:#ECECEC;
+   
+    background-color:var(--cor-background);
 }
 
-body .dark{
-    background-color: #302E2E;
-    
-}
 
 header{
     position: fixed;
@@ -30,11 +51,67 @@ header{
     left: 0;
     width: 100%;
     padding: 5px 120px;
-    background: #11141a;
+    background: var(--cor-header);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+
+
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+
+}
+
+input[type="checkbox"]:checked ~ .check{
+    background: #fff;
+    
+}
+.check:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check:before{
+    transform: translateX(-50px);
+    
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #092c3e;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+input[type="checkbox"]:checked ~ .check:after{
+    transform: translateX(0px);
 }
 
 .logo{
@@ -44,54 +121,33 @@ header{
 
 .cabecalho-links {
     font-size: 20px;
-    margin-left: 35px;
+    padding-right: 2.2rem;
+    margin-left: 17px;
     transition: .2s;
     color: rgb(211, 210, 210);
 }
 
 .cabecalho-links a:hover {
-    color: #E71818;
+    color: var(--cor-destaque);
 }
 
 #menu-hamburguer {
     font-size: 2.3rem;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--cor-branca);
     border-radius: .3rem;
     padding: .5rem 3rem;
     display: none;
 }
 
-
-.icon{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #dbefff;
-    position: absolute;
-    top: 29%;
-    right: 39%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon::before{
-    content: "\f186";
-    font-family: fontAwesome;
-    color: #0088d2;
-    font-size: 20px;
-}
-
 .login{
-    background-color: #FBFBFB;
+    background-color: var(--cor-background-login);
     margin: 10% 33% 10% 33%;
     padding-top: 3rem;
     padding-bottom: 5rem;
-    color: #0f0f0f;
+    color:  var(--cor-texto);
     text-align: center;
-    border: 1px solid #E71818;
+    border: 1px solid var(--cor-destaque);
 }
 .titulo{
     font-size: 3rem;
@@ -110,7 +166,7 @@ header{
     margin-top: .1rem;
     border-radius: 1.5rem;
     padding: 0.5rem 5rem;
-    border: 2px solid #E71818;
+    border: 2px solid var(--cor-destaque);
     
 }
 
@@ -129,21 +185,21 @@ header{
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    color: white;
-    background-color: #E71818;
+    color: var(--cor-branca);
+    background-color: var(--cor-destaque);
     font-size: 1rem;
     gap: 1rem;    
     padding: 0.6rem 4.9rem 0.6rem 4.9rem;
     border-radius: 0.5rem;
 }
 .login-botoes-entrar:hover{
-    background-color: #cc1414;
+    background-color: var(--cor-hover-verm);
 }
 
 .login-botoes-cadastrar{
     display: flex;
     justify-content: center;
-    color: rgb(207, 19, 19);
+    color: var(--cor-hover-verm);
     background-color: #ffffff;
     font-size: 1rem;
     padding: 0.6rem 3.4rem 0.6rem 3.4rem;
@@ -169,7 +225,7 @@ footer {
 }
 
 .copyright span {
-    color: #E71818;
+    color: var(--cor-destaque);
 }
 
 
@@ -212,7 +268,7 @@ footer {
         padding: 1.5rem;
         display: block;
         border: .2rem solid rgba(0, 0, 0, .1);
-        border-left: .5rem solid #E71818;
+        border-left: .5rem solid var(--cor-destaque);
         background: #1d1d1d;
     }
 

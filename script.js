@@ -8,6 +8,16 @@
 //})
 //
 
+//modo dark
+const html = document.querySelector('html')
+const check = document.getElementById('darkmode')
+darkmode.addEventListener('change', function(){
+  html.classList.toggle('escuro')
+})
+
+
+
+
 
 //menu hamburguer
 

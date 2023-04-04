@@ -7,7 +7,8 @@
     <title>Document</title>
     <!-- font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+
 
     <link rel="stylesheet" href="login.css">
 </head>
@@ -17,7 +18,7 @@
         <img class="logo" src="./images/logoAcademia.png">
 
         <div id="menu-hamburguer" class="fas fa-bars"></div>
-
+      
         <nav class="cabecalho">
             <a class="cabecalho-links" href="index.html" >Inicio</a>
             <a class="cabecalho-links" href="planos.html">Planos</a>
@@ -25,18 +26,26 @@
             <a class="cabecalho-links" href="sobre.html">Sobre</a>
             <a class="cabecalho-links" href="imc.html">IMC</a>
             <a class="cabecalho-links" href="login.html">Espaço Cliente</a>
+           
         </nav>
-
+        <label class="label-mode">
+            <input type="checkbox"  id="darkmode">
+            <span class="check"></span>
+        </label>
     </header>
-
+    
     <main>
-        <section class="login">
 
-            <div class="icon"></div>
+       
+        <section class="login">
+            
+         <!--<input type="checkbox" name="" id="darkmode">
+        <div class="icon"></div>-->
 
             <div class="login-titulo">
                 <p class="titulo">Acesso a área do cliente</p>
             </div>
+            
             <div class="login-dados">   
                 <p class="login-dados-nome">Seu CPF</p>
                 <input class="login-dados-campos" type="text" >
