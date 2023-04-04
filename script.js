@@ -1,12 +1,4 @@
-//modo dark
-//
-//const header = document.querySelector('body');
-//const icon = document.querySelector('.icon')
 
-//icon.addEventListener('click' , () => {
- // header.classList.toggle('dark')
-//})
-//
 
 //modo dark
 const html = document.querySelector('html')
